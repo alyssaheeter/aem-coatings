@@ -3,29 +3,31 @@
 These steps can't be done through the available APIs and are left for Alyssa in the ClickUp
 / GitHub UI. Ordered by priority.
 
-## A. Make the design concepts go live (GitHub Pages)
-The concept files are committed to the repo, but **GitHub Pages must be enabled by hand** —
-there's no API tool for it in this environment.
+## A. Merge + make the assets go live (GitHub)
+The repo work is on branch `claude/aem-coatings-proposal-geXK6` (**draft PR #2**). The
+ClickUp Doc embeds **githack** URLs pinned to `main`, so they resolve once the PR is merged.
 
-1. Go to **GitHub → `alyssaheeter/aem-coatings` → Settings → Pages**.
-2. Under **Build and deployment**, Source = **Deploy from a branch**; Branch = **`main`**,
-   folder = **`/ (root)`**; Save. (Merge PR #1 to `main` first, or pick the feature branch.)
-3. Wait ~1 min, then confirm these return 200 and render:
-   - https://alyssaheeter.github.io/aem-coatings/concepts/a.html
-   - https://alyssaheeter.github.io/aem-coatings/concepts/b.html
-   - https://alyssaheeter.github.io/aem-coatings/concepts/c.html
-   *(Instant fallback that needs no Pages setup, already framable:
-   `https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/a.html`, etc.)*
+1. Review & **merge PR #2 → `main`**: https://github.com/alyssaheeter/aem-coatings/pull/2
+2. Enable Pages (a deploy workflow is already committed): **Settings → Pages →
+   Build and deployment → Source = `GitHub Actions`**. Every push to `main` then redeploys.
+   - Canonical URLs: `https://alyssaheeter.github.io/aem-coatings/concepts/{a,b,c,pricing}.html`
+3. Confirm these githack URLs return 200 + render (used by the Doc — work without Pages):
+   - https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/a.html
+   - https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/b.html
+   - https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/c.html
+   - https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/pricing.html
 
-> Note: this sandbox could only reach `raw.githubusercontent.com` (files confirmed live
-> there), so I could not enable Pages or screenshot the rendered pages from here.
+> Note: WebFetch to external hosts was blocked in this build environment, so URL liveness /
+> rendering could not be verified from here — please eyeball the 4 links above after merge.
 
-## B. Turn the concept links into live embeds (ClickUp Doc)
-On the **Design Concepts** page of the `AEM Proposal` Doc:
-1. Click into the page, type **`/embed`**, paste a concept URL, Enter. Repeat for A, B, C.
-2. If a URL shows only a **bookmark card**, leave the card **and** keep the labeled text
-   link beneath it (already in the page) as a fallback.
-3. Confirm all three render before sending.
+## B. Turn the preview links into live embeds (ClickUp Doc)
+The Doc currently shows clean **"▶ Open …" links** (client-ready as-is). To upgrade them to
+**live inline previews**, the ClickUp API can't insert `/embed` blocks — do it in the UI:
+1. On the **Design Concepts** page: click in, type **`/embed`**, paste a concept githack URL,
+   Enter. Repeat for A, B, C.
+2. On the **Pricing Schedule** page: same with the `pricing.html` githack URL (the quote builder).
+3. If a URL shows only a **bookmark card**, leave the card **and** keep the labeled link beneath
+   it. Confirm all four render before sending.
 
 ## C. Gate-task custom fields + statuses (ClickUp UI)
 On the **Approve & Select** task / its list (the API can't create these):
