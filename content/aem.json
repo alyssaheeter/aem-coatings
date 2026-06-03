@@ -1,0 +1,154 @@
+{
+  "_about": "Single editable source of truth for the AEM Coatings proposal bundle (concepts + pricing demo). Non-developers can edit copy and numbers here. Every dollar figure is a benchmarked RECOMMENDATION pending Alyssa's final sign-off — see fillin flags. See README.md for the runbook.",
+  "valid_until": "2026-06-30",
+  "business": {
+    "legal_name": "AEM Coatings and Carpet Care LLC",
+    "short_name": "AEM Coatings & Carpet Care",
+    "owner": "Andres Bedolla",
+    "phone": "219-255-0949",
+    "email": "andres.bedolla@aemsurfacecare.com",
+    "tagline": "For a Fresh Start.",
+    "founded": "2024",
+    "area": "Northwest Indiana (Lake & Porter — the 219)",
+    "coating_product": "Ekopel",
+    "coating_note": "Ekopel is CONFIRMED as the coating product. Specific warranty terms, stated lifespan, and durability claims still require manufacturer-spec verification (Part-2 discovery) before appearing on the live site.",
+    "lines": ["Coatings — tub/tile refinishing & reglazing", "Carpet care"],
+    "other_services": "[CAPTURE: other services]",
+    "socials": { "instagram": "@aemcoatings", "facebook": "61573373782859" }
+  },
+  "brand": {
+    "_note": "Approximated from AEM's heritage palette. Logo SVG could not be retrieved in this environment. [FILL-IN: confirm exact hex from logo SVG].",
+    "fillin": true,
+    "palette": {
+      "oxblood": "#6E2B2B",
+      "brick": "#8A3A2E",
+      "gold": "#BF9A48",
+      "cream": "#F5EEDC",
+      "parchment": "#EFE6D0",
+      "espresso": "#2B211C",
+      "taupe": "#B9A893"
+    },
+    "type": { "heading": "Georgia, 'Times New Roman', serif", "body": "system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" }
+  },
+  "pricing_note": "All figures benchmarked to Northwest-Indiana / regional 2025 rates and positioned upper-middle for skilled, done-right work. Each is a recommendation for Alyssa's final sign-off.",
+  "tiers": [
+    {
+      "id": "foundation",
+      "name": "Foundation",
+      "one_time": 3500,
+      "monthly": null,
+      "min_term": "None",
+      "fillin": true,
+      "includes": [
+        "Custom, mobile-responsive website (lean-complete): Home, Services, About, Reviews/Proof, Contact/Quote",
+        "Real business details wired throughout (phone, email, service area)",
+        "Click-to-call + quote-request form",
+        "Before/after photo section + reviews area",
+        "Basic on-page SEO + fast, clean markup",
+        "Domain/hosting connection + launch"
+      ],
+      "best_for": "A clean, professional web presence — one-and-done",
+      "recommended": false
+    },
+    {
+      "id": "foundation_reputation",
+      "name": "Foundation + Reputation",
+      "one_time": 3500,
+      "monthly": 300,
+      "min_term": "3 months",
+      "fillin": true,
+      "includes": [
+        "Everything in Foundation",
+        "Review generation & response",
+        "Google Business Profile cleanup & upkeep"
+      ],
+      "best_for": "Wants reviews actively working for them",
+      "recommended": false
+    },
+    {
+      "id": "growth",
+      "name": "Growth",
+      "one_time": 3500,
+      "monthly": 750,
+      "min_term": "6 months",
+      "fillin": true,
+      "includes": [
+        "Everything in Reputation",
+        "Blog 2×/month (local, useful topics)",
+        "Light social posting"
+      ],
+      "best_for": "Steady, sustainable local growth",
+      "recommended": true
+    },
+    {
+      "id": "full_partner",
+      "name": "Full Marketing Partner",
+      "one_time": 3500,
+      "monthly": 1400,
+      "min_term": "6 months",
+      "fillin": true,
+      "includes": [
+        "Everything in Growth",
+        "Full social media management",
+        "Monthly performance report (plain English)",
+        "Ongoing conversion tweaks"
+      ],
+      "best_for": "Wants it fully handled — a true marketing partner",
+      "recommended": false
+    }
+  ],
+  "addons": [
+    {
+      "id": "extra_blog",
+      "label": "Extra blog post (beyond your package)",
+      "price": null,
+      "unit": "per post / mo",
+      "fillin": true,
+      "note": "Regional content runs ~$250–$399/post — quoted on request. [FILL-IN: Alyssa confirm]"
+    },
+    {
+      "id": "rush",
+      "label": "Rush / priority build window",
+      "price": null,
+      "unit": "one-time",
+      "fillin": true,
+      "note": "Quoted based on timeline. [FILL-IN: Alyssa confirm]"
+    },
+    {
+      "id": "photo_day",
+      "label": "Before/after photo-day coordination",
+      "price": null,
+      "unit": "one-time",
+      "fillin": true,
+      "note": "Quoted on request. [FILL-IN: Alyssa confirm]"
+    }
+  ],
+  "payment": {
+    "deposit_pct": "[FILL-IN: Alyssa confirm deposit %]",
+    "balance": "[FILL-IN: Alyssa confirm — e.g., on launch, or split build/launch]",
+    "monthly_terms": "Monthly fees billed monthly, starting at launch, for the package's minimum term; month-to-month after.",
+    "methods": "[FILL-IN: Alyssa confirm payment methods / late terms]",
+    "passthrough": "Domain & hosting (~$15–$25/mo, paid to your provider) and any ad spend are billed by third parties, not by Alyssa. [FILL-IN: Alyssa confirm host + exact cost]"
+  },
+  "concepts": [
+    {
+      "id": "a",
+      "name": "Heritage Trust",
+      "caption": "Badge-forward, warm and editorial. Leads with credibility and the family-run story.",
+      "url": "https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/a.html"
+    },
+    {
+      "id": "b",
+      "name": "Bold & Local",
+      "caption": "High-contrast and conversion-punchy. Big \"219\" local pride, prominent before/after, CTAs throughout.",
+      "url": "https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/b.html"
+    },
+    {
+      "id": "c",
+      "name": "Clean Service-First",
+      "caption": "Minimal and fast, with a side-by-side service split and an instant-quote form at the top.",
+      "url": "https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/c.html"
+    }
+  ],
+  "pricing_demo_url": "https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/pricing.html"
+}

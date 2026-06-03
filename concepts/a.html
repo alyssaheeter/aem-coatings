@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AEM Coatings &amp; Carpet Care — Concept A · Heritage Trust</title>
+<!--
+  CONCEPT A — "Heritage Trust"
+  Badge-forward, warm/editorial, credibility-first.
+  Design mockup for AEM Coatings and Carpet Care LLC. Realistic placeholder copy.
+  Palette approximated from documented heritage brand colors — [FILL-IN: confirm exact hex from logo SVG].
+-->
+<style>
+  :root{
+    --oxblood:#6E2B2B;      /* [FILL-IN: confirm exact hex] */
+    --brick:#8A3A2E;        /* [FILL-IN: confirm exact hex] */
+    --cream:#F5EEDC;        /* [FILL-IN: confirm exact hex] */
+    --parchment:#EFE6D0;    /* [FILL-IN: confirm exact hex] */
+    --gold:#BF9A48;         /* [FILL-IN: confirm exact hex] */
+    --espresso:#2B211C;     /* [FILL-IN: confirm exact hex] */
+    --taupe:#B9A893;        /* [FILL-IN: confirm exact hex] */
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Georgia,'Times New Roman',serif;color:var(--espresso);background:var(--cream);line-height:1.6}
+  h1,h2,h3{font-family:Georgia,serif;letter-spacing:.3px}
+  a{color:inherit}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .demo-flag{background:var(--espresso);color:var(--cream);text-align:center;font-family:Arial,sans-serif;font-size:12px;letter-spacing:1px;padding:6px;text-transform:uppercase}
+
+  /* Top bar */
+  header{background:var(--oxblood);color:var(--cream);border-bottom:3px solid var(--gold)}
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:var(--maxw);margin:0 auto;flex-wrap:wrap;gap:12px}
+  .badge{display:flex;align-items:center;gap:14px}
+  .badge svg{flex:0 0 auto}
+  .badge .name{font-size:18px;font-weight:bold;line-height:1.15}
+  .badge .name small{display:block;font-family:Arial,sans-serif;font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;font-weight:normal}
+  nav a{font-family:Arial,sans-serif;font-size:13px;text-decoration:none;margin-left:22px;letter-spacing:.5px;color:var(--cream);opacity:.9}
+  nav a:hover{opacity:1;color:var(--gold)}
+  .call{font-family:Arial,sans-serif;background:var(--gold);color:var(--espresso);padding:9px 16px;border-radius:3px;text-decoration:none;font-weight:bold;font-size:14px}
+
+  /* Hero */
+  .hero{background:
+      linear-gradient(rgba(43,33,28,.62),rgba(43,33,28,.62)),
+      repeating-linear-gradient(45deg,#3a2a24,#3a2a24 22px,#34241e 22px,#34241e 44px);
+    color:var(--cream);text-align:center;padding:84px 24px 90px}
+  .hero .eyebrow{font-family:Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;font-size:12px;color:var(--gold);margin-bottom:18px}
+  .hero h1{font-size:52px;line-height:1.08;margin-bottom:10px}
+  .hero .tag{font-style:italic;font-size:24px;color:var(--parchment);margin-bottom:28px}
+  .hero p{max-width:620px;margin:0 auto 32px;font-size:18px;color:#efe6d0e0}
+  .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{font-family:Arial,sans-serif;text-decoration:none;padding:14px 26px;border-radius:3px;font-weight:bold;font-size:15px;display:inline-block}
+  .btn-gold{background:var(--gold);color:var(--espresso)}
+  .btn-ghost{background:transparent;color:var(--cream);border:1.5px solid var(--cream)}
+
+  /* Trust strip */
+  .trust{background:var(--parchment);border-bottom:1px solid #e0d4ba}
+  .trust .wrap{display:flex;justify-content:space-around;flex-wrap:wrap;gap:18px;padding:22px 24px;text-align:center}
+  .trust div{font-family:Arial,sans-serif;font-size:13px;color:var(--oxblood);letter-spacing:.5px}
+  .trust strong{display:block;font-family:Georgia,serif;font-size:22px;color:var(--espresso)}
+
+  section{padding:64px 0}
+  .section-head{text-align:center;max-width:640px;margin:0 auto 44px}
+  .section-head .eyebrow{font-family:Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;font-size:12px;color:var(--brick);margin-bottom:10px}
+  .section-head h2{font-size:34px;color:var(--oxblood)}
+  .rule{width:60px;height:3px;background:var(--gold);margin:14px auto 0}
+
+  /* Services split */
+  .services{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .svc{background:#fff;border:1px solid #e7dcc2;border-radius:6px;overflow:hidden;box-shadow:0 8px 24px rgba(43,33,28,.06)}
+  .svc .top{height:8px;background:var(--oxblood)}
+  .svc .top.alt{background:var(--gold)}
+  .svc .body{padding:30px}
+  .svc h3{font-size:24px;margin-bottom:8px;color:var(--espresso)}
+  .svc .lead{font-family:Arial,sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--brick);margin-bottom:14px}
+  .svc ul{list-style:none;font-family:Arial,sans-serif;font-size:15px}
+  .svc li{padding:7px 0 7px 24px;position:relative;border-bottom:1px dashed #ece1c9}
+  .svc li:before{content:"✦";position:absolute;left:0;color:var(--gold)}
+
+  /* Before/After */
+  .ba{background:var(--parchment)}
+  .ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px}
+  .ph{aspect-ratio:4/3;border-radius:6px;display:flex;align-items:center;justify-content:center;text-align:center;font-family:Arial,sans-serif;color:#fff;font-size:14px;letter-spacing:1px;border:2px dashed rgba(255,255,255,.55)}
+  .ph.before{background:repeating-linear-gradient(135deg,#9a8f7d,#9a8f7d 14px,#8d8273 14px,#8d8273 28px)}
+  .ph.after{background:repeating-linear-gradient(135deg,#7a8b86,#7a8b86 14px,#6f817b 14px,#6f817b 28px)}
+  .ph span{background:rgba(43,33,28,.55);padding:8px 14px;border-radius:3px}
+
+  /* Reviews */
+  .reviews{background:var(--oxblood);color:var(--cream)}
+  .reviews .section-head h2{color:var(--cream)}
+  .reviews .section-head .eyebrow{color:var(--gold)}
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .rev{background:rgba(255,255,255,.06);border:1px solid rgba(191,154,72,.4);border-radius:6px;padding:24px}
+  .stars{color:var(--gold);letter-spacing:3px;margin-bottom:10px}
+  .rev p{font-style:italic;font-size:16px;margin-bottom:12px}
+  .rev .who{font-family:Arial,sans-serif;font-size:13px;color:var(--taupe)}
+
+  /* CTA band */
+  .band{background:var(--gold);color:var(--espresso);text-align:center}
+  .band h2{font-size:30px;margin-bottom:8px}
+  .band p{font-family:Arial,sans-serif;margin-bottom:22px}
+
+  footer{background:var(--espresso);color:var(--taupe);font-family:Arial,sans-serif;font-size:14px}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;padding:46px 24px}
+  footer h4{font-family:Georgia,serif;color:var(--cream);font-size:18px;margin-bottom:10px}
+  footer a{color:var(--gold);text-decoration:none}
+  footer .legal{border-top:1px solid #3e342d;text-align:center;padding:18px;color:#8a7c6c;font-size:12px}
+
+  @media(max-width:760px){
+    .hero h1{font-size:36px}
+    .services,.ba-grid,.rev-grid{grid-template-columns:1fr}
+    nav{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="demo-flag">Design concept · placeholder copy &amp; images for review — not a live site</div>
+
+<header>
+  <div class="topbar">
+    <div class="badge">
+      <!-- Circular heritage badge motif: clawfoot tub + swirl -->
+      <svg width="54" height="54" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="47" fill="none" stroke="#BF9A48" stroke-width="2"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#BF9A48" stroke-width="1"/>
+        <path d="M30 56 q20 14 40 0 v-6 q-20 10 -40 0 z" fill="#BF9A48"/>
+        <circle cx="30" cy="62" r="2.5" fill="#BF9A48"/><circle cx="70" cy="62" r="2.5" fill="#BF9A48"/>
+        <path d="M50 30 q8 6 0 14 q-8 -8 0 -14z" fill="#F5EEDC"/>
+      </svg>
+      <div class="name">AEM Coatings &amp; Carpet Care<small>Northwest Indiana · Est. 2024</small></div>
+    </div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="call" href="tel:+12192550949">219-255-0949</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">Tub &amp; Tile Refinishing · Carpet Care</div>
+  <h1>Old surfaces, made new again.</h1>
+  <div class="tag">"For a Fresh Start."</div>
+  <p>Family-run refinishing and carpet care across the 219 — honest work, no corners cut, surfaces that look right and last.</p>
+  <div class="cta-row">
+    <a class="btn btn-gold" href="#contact">Get a Free Quote</a>
+    <a class="btn btn-ghost" href="tel:+12192550949">Call 219-255-0949</a>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <div><strong>2024</strong>Locally founded &amp; owned</div>
+    <div><strong>219</strong>Serving Lake &amp; Porter County</div>
+    <div><strong>2-in-1</strong>Coatings + carpet, one call</div>
+    <div><strong>★★★★★</strong>[FILL-IN: verified review count]</div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">What we do</div>
+      <h2>Two trades, one trusted crew</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="services">
+      <div class="svc">
+        <div class="top"></div>
+        <div class="body">
+          <div class="lead">Coatings</div>
+          <h3>Tub &amp; Tile Refinishing</h3>
+          <ul>
+            <li>Bathtub refinishing &amp; reglazing</li>
+            <li>Tile &amp; surround resurfacing</li>
+            <li>Chip, crack &amp; rust repair</li>
+            <li>Color updates on dated fixtures</li>
+          </ul>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="top alt"></div>
+        <div class="body">
+          <div class="lead">Carpet Care</div>
+          <h3>Carpet Cleaning &amp; Restoration</h3>
+          <ul>
+            <li>Deep steam &amp; stain treatment</li>
+            <li>High-traffic &amp; pet odor care</li>
+            <li>Area rugs &amp; upholstery</li>
+            <li>Move-in / move-out refresh</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="ba">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Proof, not promises</div>
+      <h2>Before &amp; After</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="ba-grid">
+      <div class="ph before"><span>BEFORE — [FILL-IN: real project photo]</span></div>
+      <div class="ph after"><span>AFTER — [FILL-IN: real project photo]</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">From our neighbors</div>
+      <h2>What people say</h2>
+    </div>
+    <div class="rev-grid">
+      <div class="rev"><div class="stars">★★★★★</div><p>"[FILL-IN: real customer review — placeholder text shown for layout only.]"</p><div class="who">— [FILL-IN], Schererville</div></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>"[FILL-IN: real customer review — placeholder text shown for layout only.]"</p><div class="who">— [FILL-IN], Crown Point</div></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>"[FILL-IN: real customer review — placeholder text shown for layout only.]"</p><div class="who">— [FILL-IN], Valparaiso</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="band">
+  <div class="wrap">
+    <h2>Ready for a fresh start?</h2>
+    <p>Tell us about your tub, tile, or carpet — we'll get you a straight answer and a fair price.</p>
+    <a class="btn btn-ghost" style="border-color:var(--espresso);color:var(--espresso)" href="tel:+12192550949">Call or text 219-255-0949</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>AEM Coatings and Carpet Care LLC</h4>
+      Northwest Indiana (Lake &amp; Porter County)<br/>
+      Owner: Andres Bedolla<br/>
+      Est. 2024 · "For a Fresh Start."
+    </div>
+    <div>
+      <h4>Get in touch</h4>
+      <a href="tel:+12192550949">219-255-0949</a><br/>
+      <a href="mailto:andres.bedolla@aemsurfacecare.com">andres.bedolla@aemsurfacecare.com</a><br/>
+      <a href="https://instagram.com/aemcoatings">Instagram @aemcoatings</a> ·
+      <a href="https://facebook.com/61573373782859">Facebook</a>
+    </div>
+    <div>
+      <h4>Services</h4>
+      Tub &amp; tile refinishing<br/>
+      Carpet cleaning &amp; care<br/>
+      [CAPTURE: other services]
+    </div>
+  </div>
+  <div class="legal">© 2024–2025 AEM Coatings and Carpet Care LLC. All rights reserved. · Concept A — Heritage Trust</div>
+</footer>
+</body>
+</html>
