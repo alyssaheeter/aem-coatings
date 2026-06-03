@@ -35,9 +35,9 @@ Right now your site (aemsurfacecare.com) is an unfinished demo — wrong phone n
 
 These are clickable, working pages (not pictures). Open them on your phone *and* your computer, and notice which one *feels* most like AEM — that's the one we build out:
 
-- **A — Heritage Trust** (warm, established, credibility-first): https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/a.html
-- **B — Bold & Local** (high-energy, big "219" pride): https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/b.html
-- **C — Clean Service-First** (minimal, fast, instant-quote up top): https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/c.html
+- **A — Heritage Trust** (warm, established, credibility-first): https://rawcdn.githack.com/alyssaheeter/aem-coatings/03474d23356b24473125a6248511a07945cbe21b/concepts/a.html
+- **B — Bold & Local** (high-energy, big "219" pride): https://rawcdn.githack.com/alyssaheeter/aem-coatings/03474d23356b24473125a6248511a07945cbe21b/concepts/b.html
+- **C — Clean Service-First** (minimal, fast, instant-quote up top): https://rawcdn.githack.com/alyssaheeter/aem-coatings/03474d23356b24473125a6248511a07945cbe21b/concepts/c.html
 
 Don't sweat the placeholder words and photos — those get swapped for your real ones during the build.
 
@@ -46,7 +46,7 @@ Don't sweat the placeholder words and photos — those get swapped for your real
 There are four packages, all built on the same solid website. The one I'd point you to is **Growth** — it gets the site built *and* keeps AEM visible with reviews, fresh local content, and steady social, without the bigger commitment of the full partner tier.
 
 You can **build your own quote** — pick a package, see the total update live, and grab a summary:
-https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/pricing.html
+https://rawcdn.githack.com/alyssaheeter/aem-coatings/03474d23356b24473125a6248511a07945cbe21b/concepts/pricing.html
 
 Full numbers and what's one-time vs. monthly are on the **Pricing Schedule** page of the proposal.
 
