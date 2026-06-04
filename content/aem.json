@@ -17,16 +17,17 @@
     "socials": { "instagram": "@aemcoatings", "facebook": "61573373782859" }
   },
   "brand": {
-    "_note": "Approximated from AEM's heritage palette. Logo SVG could not be retrieved in this environment. [FILL-IN: confirm exact hex from logo SVG].",
-    "fillin": true,
+    "_note": "Sampled from the official AEM circular badge logo (provided by client). Confirmed brand palette.",
+    "fillin": false,
+    "logo": "assets/aem-logo.png",
     "palette": {
-      "oxblood": "#6E2B2B",
+      "oxblood": "#6E2526",
       "brick": "#8A3A2E",
-      "gold": "#BF9A48",
-      "cream": "#F5EEDC",
-      "parchment": "#EFE6D0",
-      "espresso": "#2B211C",
-      "taupe": "#B9A893"
+      "gold": "#BD9A4C",
+      "cream": "#EFE5CE",
+      "parchment": "#E7DABD",
+      "espresso": "#2E2018",
+      "taupe": "#BBA88C"
     },
     "type": { "heading": "Georgia, 'Times New Roman', serif", "body": "system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" }
   },

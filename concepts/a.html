@@ -8,17 +8,17 @@
   CONCEPT A — "Heritage Trust"
   Badge-forward, warm/editorial, credibility-first.
   Design mockup for AEM Coatings and Carpet Care LLC. Realistic placeholder copy.
-  Palette approximated from documented heritage brand colors — [FILL-IN: confirm exact hex from logo SVG].
+  Palette sampled from the official AEM circular badge logo.
 -->
 <style>
   :root{
-    --oxblood:#6E2B2B;      /* [FILL-IN: confirm exact hex] */
-    --brick:#8A3A2E;        /* [FILL-IN: confirm exact hex] */
-    --cream:#F5EEDC;        /* [FILL-IN: confirm exact hex] */
-    --parchment:#EFE6D0;    /* [FILL-IN: confirm exact hex] */
-    --gold:#BF9A48;         /* [FILL-IN: confirm exact hex] */
-    --espresso:#2B211C;     /* [FILL-IN: confirm exact hex] */
-    --taupe:#B9A893;        /* [FILL-IN: confirm exact hex] */
+    --oxblood:#6E2526;   /* sampled from official AEM badge */
+    --brick:#8A3A2E;
+    --cream:#EFE5CE;
+    --parchment:#E7DABD;
+    --gold:#BD9A4C;
+    --espresso:#2E2018;
+    --taupe:#BBA88C;
     --maxw:1080px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -34,6 +34,7 @@
   .topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:var(--maxw);margin:0 auto;flex-wrap:wrap;gap:12px}
   .badge{display:flex;align-items:center;gap:14px}
   .badge svg{flex:0 0 auto}
+  .badge .aem-logo{flex:0 0 auto;height:58px;width:58px;object-fit:cover;border-radius:50%;display:block;border:2px solid var(--gold)}
   .badge .name{font-size:18px;font-weight:bold;line-height:1.15}
   .badge .name small{display:block;font-family:Arial,sans-serif;font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;font-weight:normal}
   nav a{font-family:Arial,sans-serif;font-size:13px;text-decoration:none;margin-left:22px;letter-spacing:.5px;color:var(--cream);opacity:.9}
@@ -120,14 +121,15 @@
 <header>
   <div class="topbar">
     <div class="badge">
-      <!-- Circular heritage badge motif: clawfoot tub + swirl -->
-      <svg width="54" height="54" viewBox="0 0 100 100" aria-hidden="true">
-        <circle cx="50" cy="50" r="47" fill="none" stroke="#BF9A48" stroke-width="2"/>
-        <circle cx="50" cy="50" r="40" fill="none" stroke="#BF9A48" stroke-width="1"/>
-        <path d="M30 56 q20 14 40 0 v-6 q-20 10 -40 0 z" fill="#BF9A48"/>
-        <circle cx="30" cy="62" r="2.5" fill="#BF9A48"/><circle cx="70" cy="62" r="2.5" fill="#BF9A48"/>
-        <path d="M50 30 q8 6 0 14 q-8 -8 0 -14z" fill="#F5EEDC"/>
-      </svg>
+      <!-- Official AEM badge; falls back to the heritage motif until assets/aem-logo.png is present -->
+      <img class="aem-logo" src="../assets/aem-logo.png" alt="AEM Coatings and Carpet Care LLC — For a Fresh Start" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()">
+      <span class="brand-fallback"><svg width="54" height="54" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="47" fill="none" stroke="#BD9A4C" stroke-width="2"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#BD9A4C" stroke-width="1"/>
+        <path d="M30 56 q20 14 40 0 v-6 q-20 10 -40 0 z" fill="#BD9A4C"/>
+        <circle cx="30" cy="62" r="2.5" fill="#BD9A4C"/><circle cx="70" cy="62" r="2.5" fill="#BD9A4C"/>
+        <path d="M50 30 q8 6 0 14 q-8 -8 0 -14z" fill="#EFE5CE"/>
+      </svg></span>
       <div class="name">AEM Coatings &amp; Carpet Care<small>Northwest Indiana · Est. 2024</small></div>
     </div>
     <nav>

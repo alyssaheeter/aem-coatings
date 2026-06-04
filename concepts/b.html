@@ -8,12 +8,12 @@
   CONCEPT B — "Bold & Local"
   High-contrast, big NW-Indiana, before/after, conversion-punchy.
   Design mockup for AEM Coatings and Carpet Care LLC. Realistic placeholder copy.
-  Palette approximated from documented heritage brand colors — [FILL-IN: confirm exact hex from logo SVG].
+  Palette sampled from the official AEM circular badge logo.
 -->
 <style>
   :root{
-    --oxblood:#6E2B2B; --brick:#9B3A2A; --cream:#F5EEDC; --parchment:#EFE6D0;
-    --gold:#D6A93B; --espresso:#211915; --charcoal:#2E2722; --taupe:#B9A893;
+    --oxblood:#6E2526; --brick:#8A3A2E; --cream:#EFE5CE; --parchment:#E7DABD;
+    --gold:#BD9A4C; --espresso:#211915; --charcoal:#2E2722; --taupe:#BBA88C;
     --maxw:1120px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -28,6 +28,7 @@
   .logo{display:flex;align-items:center;gap:12px;font-weight:900;font-size:18px;text-transform:uppercase;letter-spacing:1px}
   .logo .dot{width:12px;height:12px;background:var(--gold);border-radius:50%}
   .logo b{color:var(--gold)}
+  .logo .aem-logo{height:46px;width:46px;object-fit:cover;border-radius:50%;display:block;border:2px solid var(--gold)}
   .nav a{margin-left:24px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;opacity:.85}
   .nav a:hover{color:var(--gold);opacity:1}
   .call{background:var(--brick);color:#fff;padding:11px 18px;border-radius:4px;font-weight:800;letter-spacing:.5px}
@@ -102,7 +103,7 @@
 
 <header>
   <div class="topbar">
-    <div class="logo"><span class="dot"></span>AEM <b>Coatings &amp; Carpet</b></div>
+    <div class="logo"><img class="aem-logo" src="../assets/aem-logo.png" alt="AEM Coatings and Carpet Care LLC badge" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span class="dot"></span>AEM <b>Coatings &amp; Carpet</b></div>
     <div class="nav">
       <a href="#services">Services</a>
       <a href="#work">Before/After</a>

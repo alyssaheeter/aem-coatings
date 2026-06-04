@@ -55,8 +55,10 @@ Do this for all four (A, B, C, pricing). If one renders only as a bookmark card,
 ## Notes
 - All copy and images are **realistic placeholders for layout review** — not verified marketing claims.
   Items needing client input are marked `[FILL-IN: …]` or `[CAPTURE: …]`.
-- Brand colors are **approximated** from AEM's heritage palette and flagged
-  `[FILL-IN: confirm exact hex from logo SVG]` until the source logo is provided.
+- Brand colors are **sampled from the official AEM circular badge** (oxblood `#6E2526`,
+  gold `#BD9A4C`, espresso `#2E2018`, taupe `#BBA88C`, brick `#8A3A2E`, cream `#EFE5CE`).
+- The real badge loads from **`assets/aem-logo.png`** on every page (with a placeholder
+  fallback until that file is committed — see `assets/README.md`).
 - The coating product **Ekopel is confirmed**, but its warranty/lifespan/durability claims require
   manufacturer-spec verification before going on the live site.
 - Real business details used: AEM Coatings and Carpet Care LLC · Owner Andres Bedolla ·
