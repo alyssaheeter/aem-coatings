@@ -2,12 +2,12 @@
 
 Brand assets for the AEM proposal bundle.
 
-## aem-logo.png  ← add this file
+## aem-logo.jpg  ← add this file
 
-Drop the official AEM circular badge here, named exactly **`aem-logo.png`**.
+Drop the official AEM circular badge here, named exactly **`aem-logo.jpg`**.
 
 Every page (`index.html`, `concepts/a.html`, `b.html`, `c.html`, `pricing.html`) already
-references `assets/aem-logo.png` and will show it automatically once it's committed. Until
+references `assets/aem-logo.jpg` and will show it automatically once it's committed. Until
 then, each page falls back to its placeholder mark — nothing breaks.
 
 **Tips**
