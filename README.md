@@ -15,7 +15,7 @@ previewed live and embedded inside the client proposal (a ClickUp Doc).
 | `concepts/pricing.html` | **Interactive quote builder** — pick a package + add-ons, live total, copyable JSON summary |
 | `content/aem.json` | **Single source of truth** — business facts, brand palette, the 4 tiers + pricing, add-ons, concept captions |
 | `proposal/` | Staged ClickUp proposal copy (one markdown file per Doc page) + ID map + manual-finish checklist |
-| `assets/aem-logo.png` | Official AEM badge, shown on every page (see `assets/README.md`) |
+| `assets/aem-logo.jpg` | Official AEM badge, shown on every page (see `assets/README.md`) |
 
 ## Runbook — editing & redeploying (no dev required)
 
@@ -55,7 +55,7 @@ Do this for all four (A, B, C, pricing). If one renders only as a bookmark card,
   Items needing client input are marked `[FILL-IN: …]` or `[CAPTURE: …]`.
 - Brand colors are **sampled from the official AEM circular badge** (oxblood `#6E2526`,
   gold `#BD9A4C`, espresso `#2E2018`, taupe `#BBA88C`, brick `#8A3A2E`, cream `#EFE5CE`).
-- The real badge loads from **`assets/aem-logo.png`** on every page (with a placeholder
+- The real badge loads from **`assets/aem-logo.jpg`** on every page (with a placeholder
   fallback until that file is committed — see `assets/README.md`).
 - The coating product **Ekopel is confirmed**, but its warranty/lifespan/durability claims require
   manufacturer-spec verification before going on the live site.

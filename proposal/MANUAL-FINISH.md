@@ -11,10 +11,10 @@ branch → `main` / `(root)`**. The ClickUp Doc and the client email use the liv
 - https://alyssaheeter.github.io/aem-coatings/concepts/c.html
 - https://alyssaheeter.github.io/aem-coatings/concepts/pricing.html
 
-## A2. Add the logo file (human-only — agent can't write a pasted image)
-Commit the official badge to **`assets/aem-logo.png`** (square / transparent-background ideal).
-Every page already references it and will display it on the next Pages redeploy; until then each
-page shows its placeholder fallback. See `assets/README.md`.
+## A2. Logo file — DONE
+The official badge is committed at **`assets/aem-logo.jpg`** and referenced by every page; it
+displays automatically on Pages. (Optional polish: a square / transparent-background version would
+look cleaner on the light layouts — drop a replacement at the same path to swap it.)
 
 ## B. Turn the preview links into live embeds (ClickUp Doc)
 The Doc currently shows clean **"▶ Open …" links** (client-ready as-is). To upgrade them to

@@ -19,7 +19,7 @@
   "brand": {
     "_note": "Sampled from the official AEM circular badge logo (provided by client). Confirmed brand palette.",
     "fillin": false,
-    "logo": "assets/aem-logo.png",
+    "logo": "assets/aem-logo.jpg",
     "palette": {
       "oxblood": "#6E2526",
       "brick": "#8A3A2E",
