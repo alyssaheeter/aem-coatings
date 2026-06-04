@@ -15,7 +15,7 @@ previewed live and embedded inside the client proposal (a ClickUp Doc).
 | `concepts/pricing.html` | **Interactive quote builder** — pick a package + add-ons, live total, copyable JSON summary |
 | `content/aem.json` | **Single source of truth** — business facts, brand palette, the 4 tiers + pricing, add-ons, concept captions |
 | `proposal/` | Staged ClickUp proposal copy (one markdown file per Doc page) + ID map + manual-finish checklist |
-| `.github/workflows/pages.yml` | GitHub Actions workflow that deploys this repo to GitHub Pages |
+| `assets/aem-logo.png` | Official AEM badge, shown on every page (see `assets/README.md`) |
 
 ## Runbook — editing & redeploying (no dev required)
 
@@ -34,18 +34,16 @@ if unsure.
 > so it still works if the file can't be fetched).
 
 ### 2. Redeploy GitHub Pages
-1. Commit + push your change to `main`.
-2. One-time setup: **Settings → Pages → Source = GitHub Actions**. After that, every push to
-   `main` redeploys automatically via `.github/workflows/pages.yml`.
-3. Canonical URLs once enabled: `https://alyssaheeter.github.io/aem-coatings/concepts/<file>`
+Pages is served from **Settings → Pages → Deploy from a branch → `main` / `(root)`**. Just
+commit + push to `main` and it redeploys automatically (a minute or two — hard-refresh to see it).
+Live URLs: `https://alyssaheeter.github.io/aem-coatings/concepts/<file>`
 
 ### 3. Live preview URLs used in the proposal
-The ClickUp Doc embeds **raw.githack.com** URLs (framable, work as soon as the branch is on `main`,
-no Pages toggle required):
-- `https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/a.html`
-- `https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/b.html`
-- `https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/c.html`
-- `https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/pricing.html`
+The ClickUp Doc embeds the live GitHub Pages URLs:
+- `https://alyssaheeter.github.io/aem-coatings/concepts/a.html`
+- `https://alyssaheeter.github.io/aem-coatings/concepts/b.html`
+- `https://alyssaheeter.github.io/aem-coatings/concepts/c.html`
+- `https://alyssaheeter.github.io/aem-coatings/concepts/pricing.html`
 
 ### 4. Re-embed in ClickUp
 In a Doc page, type `/embed` and paste the URL above to turn a link into a live inline preview.

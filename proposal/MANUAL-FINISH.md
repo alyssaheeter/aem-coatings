@@ -3,29 +3,25 @@
 These steps can't be done through the available APIs and are left for Alyssa in the ClickUp
 / GitHub UI. Ordered by priority.
 
-## A. Merge + make the assets go live (GitHub)
-The repo work is on branch `claude/aem-coatings-proposal-geXK6` (**draft PR #2**). The
-ClickUp Doc embeds **githack** URLs pinned to `main`, so they resolve once the PR is merged.
+## A. GitHub Pages — DONE (verify only)
+PRs #2 and #3 are merged to `main`, and Pages serves from **Settings → Pages → Deploy from a
+branch → `main` / `(root)`**. The ClickUp Doc and the client email use the live Pages URLs:
+- https://alyssaheeter.github.io/aem-coatings/concepts/a.html
+- https://alyssaheeter.github.io/aem-coatings/concepts/b.html
+- https://alyssaheeter.github.io/aem-coatings/concepts/c.html
+- https://alyssaheeter.github.io/aem-coatings/concepts/pricing.html
 
-1. Review & **merge PR #2 → `main`**: https://github.com/alyssaheeter/aem-coatings/pull/2
-2. Enable Pages (a deploy workflow is already committed): **Settings → Pages →
-   Build and deployment → Source = `GitHub Actions`**. Every push to `main` then redeploys.
-   - Canonical URLs: `https://alyssaheeter.github.io/aem-coatings/concepts/{a,b,c,pricing}.html`
-3. Confirm these githack URLs return 200 + render (used by the Doc — work without Pages):
-   - https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/a.html
-   - https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/b.html
-   - https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/c.html
-   - https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/pricing.html
-
-> Note: WebFetch to external hosts was blocked in this build environment, so URL liveness /
-> rendering could not be verified from here — please eyeball the 4 links above after merge.
+## A2. Add the logo file (human-only — agent can't write a pasted image)
+Commit the official badge to **`assets/aem-logo.png`** (square / transparent-background ideal).
+Every page already references it and will display it on the next Pages redeploy; until then each
+page shows its placeholder fallback. See `assets/README.md`.
 
 ## B. Turn the preview links into live embeds (ClickUp Doc)
 The Doc currently shows clean **"▶ Open …" links** (client-ready as-is). To upgrade them to
 **live inline previews**, the ClickUp API can't insert `/embed` blocks — do it in the UI:
-1. On the **Design Concepts** page: click in, type **`/embed`**, paste a concept githack URL,
+1. On the **Design Concepts** page: click in, type **`/embed`**, paste a concept GitHub Pages URL,
    Enter. Repeat for A, B, C.
-2. On the **Pricing Schedule** page: same with the `pricing.html` githack URL (the quote builder).
+2. On the **Pricing Schedule** page: same with the `pricing.html` GitHub Pages URL (the quote builder).
 3. If a URL shows only a **bookmark card**, leave the card **and** keep the labeled link beneath
    it. Confirm all four render before sending.
 
