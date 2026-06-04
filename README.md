@@ -15,7 +15,7 @@ previewed live and embedded inside the client proposal (a ClickUp Doc).
 | `concepts/pricing.html` | **Interactive quote builder** — pick a package + add-ons, live total, copyable JSON summary |
 | `content/aem.json` | **Single source of truth** — business facts, brand palette, the 4 tiers + pricing, add-ons, concept captions |
 | `proposal/` | Staged ClickUp proposal copy (one markdown file per Doc page) + ID map + manual-finish checklist |
-| `.github/workflows/pages.yml` | GitHub Actions workflow that deploys this repo to GitHub Pages |
+| `assets/aem-logo.png` | Official AEM badge, shown on every page (see `assets/README.md`) |
 
 ## Runbook — editing & redeploying (no dev required)
 
@@ -34,18 +34,16 @@ if unsure.
 > so it still works if the file can't be fetched).
 
 ### 2. Redeploy GitHub Pages
-1. Commit + push your change to `main`.
-2. One-time setup: **Settings → Pages → Source = GitHub Actions**. After that, every push to
-   `main` redeploys automatically via `.github/workflows/pages.yml`.
-3. Canonical URLs once enabled: `https://alyssaheeter.github.io/aem-coatings/concepts/<file>`
+Pages is served from **Settings → Pages → Deploy from a branch → `main` / `(root)`**. Just
+commit + push to `main` and it redeploys automatically (a minute or two — hard-refresh to see it).
+Live URLs: `https://alyssaheeter.github.io/aem-coatings/concepts/<file>`
 
 ### 3. Live preview URLs used in the proposal
-The ClickUp Doc embeds **raw.githack.com** URLs (framable, work as soon as the branch is on `main`,
-no Pages toggle required):
-- `https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/a.html`
-- `https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/b.html`
-- `https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/c.html`
-- `https://raw.githack.com/alyssaheeter/aem-coatings/main/concepts/pricing.html`
+The ClickUp Doc embeds the live GitHub Pages URLs:
+- `https://alyssaheeter.github.io/aem-coatings/concepts/a.html`
+- `https://alyssaheeter.github.io/aem-coatings/concepts/b.html`
+- `https://alyssaheeter.github.io/aem-coatings/concepts/c.html`
+- `https://alyssaheeter.github.io/aem-coatings/concepts/pricing.html`
 
 ### 4. Re-embed in ClickUp
 In a Doc page, type `/embed` and paste the URL above to turn a link into a live inline preview.
@@ -55,8 +53,10 @@ Do this for all four (A, B, C, pricing). If one renders only as a bookmark card,
 ## Notes
 - All copy and images are **realistic placeholders for layout review** — not verified marketing claims.
   Items needing client input are marked `[FILL-IN: …]` or `[CAPTURE: …]`.
-- Brand colors are **approximated** from AEM's heritage palette and flagged
-  `[FILL-IN: confirm exact hex from logo SVG]` until the source logo is provided.
+- Brand colors are **sampled from the official AEM circular badge** (oxblood `#6E2526`,
+  gold `#BD9A4C`, espresso `#2E2018`, taupe `#BBA88C`, brick `#8A3A2E`, cream `#EFE5CE`).
+- The real badge loads from **`assets/aem-logo.png`** on every page (with a placeholder
+  fallback until that file is committed — see `assets/README.md`).
 - The coating product **Ekopel is confirmed**, but its warranty/lifespan/durability claims require
   manufacturer-spec verification before going on the live site.
 - Real business details used: AEM Coatings and Carpet Care LLC · Owner Andres Bedolla ·
